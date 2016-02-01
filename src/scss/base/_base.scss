@@ -1,0 +1,63 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5a5a5a;
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+}
+
+a {
+	color: palette(grey, dark); 
+	text-decoration: none;
+	font-weight: $font-weight--medium;
+}
+
+p {
+	margin: 0 0 em(30px, 18px);
+	font-weight: $font-weight--light;
+	font-size: em(18px);
+	line-height: (27px/18px);
+	font-family: $font-family--secondary;
+}
+
+// Lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Images
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Form elements
+
+input, 
+textarea {
+	display: block;
+	padding: 15px;
+	width: 100%; 
+	outline: 0;
+	border: 0;
+}
+
+input:focus, 
+textarea:focus {
+	transition: $trns_duration;
+}
+
+// Button
+
+button {
+	outline: 0;
+}
