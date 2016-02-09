@@ -19,10 +19,15 @@ $font-weight--ultra-bold : 900;
 
 $white : #fff;
 $black : #0b0b0b;
-$grey  : #D8D8D8;
+$grey  : #dcddd8;
 
-$blue-zodiac 	: #0F1D42;
-$red-monza		: #D0021B;
+//red 
+$valencia		: #D74B4B;
+
+// blue light to dark
+$blue-bayoux	: #475F77;
+$pickled-blue 	: #354b5e;
+$shark			: #28282E;
 
 $fountain-blue  : #52bab3;
 $emerald        : #5ece7f;
@@ -33,9 +38,11 @@ $scooter        : #39add1;
 
 // Color Usage
 
-$color-primary   : $red-monza;
-$color-secondary : $blue-zodiac;
-$color-accent    : $emerald;
+$color-primary   : $valencia;
+$color-secondary : $pickled-blue;
+$color-accent    : $blue-bayoux;
+$color-dark		 : $shark;
+
 $color-shadow    : rgba($black, .2);
 
 // Background Colors

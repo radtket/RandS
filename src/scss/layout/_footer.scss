@@ -121,8 +121,7 @@
   font-family: $font-family--primary;
   font-size: 14px;
   font-weight: $font-weight--ultra-bold;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
 	&.active {
 		color: $color-primary;
 	}
@@ -144,4 +143,75 @@
 	@extend .navbar-default;
 	background: url('http://static.livedemo00.template-help.com/joomla_51888/templates/theme2070/images/template/headerBg.gif') bottom left repeat-x #ffffff;
 	padding-bottom: 11px;
+}
+
+
+.footer {
+  background: $blue-bayoux;
+  padding: 50px 0;
+  color: $grey;
+}
+.footer__contact {
+  &--item {
+    padding: 7.5px 0px;
+    &:first-child {
+      padding-top: 0px;
+    }
+    &.active,
+    &:hover {
+      color: $color-primary;
+    }
+    i {
+      color: $white;
+    }
+  }
+}
+
+a.footer__contact--item {
+  color: $grey;
+}
+
+
+#footer_signup {
+  margin: 20px 0;
+}
+#subscribe > input[type="text"] {
+    border: 0 none;
+    color: #99abb7;
+    font-style: italic;
+    font-size: 0.9em;
+    padding: 7px 10px;
+    width: 170px;
+    height: 40px;
+    display: inline-block;
+}
+#subscribe > button[type="submit"] {
+    background: none repeat scroll 0 0 $color-primary;
+    border: 0 none;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 300;
+    padding: 0px 20px;
+    margin-left: -5px;
+    height: 40px;
+    transition: all 0.4s ease-in;
+}
+
+#subscribe #result {
+    display: block;
+    width: 100% !important;
+}
+
+
+.copyright {
+  background: $pickled-blue;
+  padding: 20px 0;
+  color: $grey;
+  p {
+    margin: 0px;
+    font-weight: 300;
+  }
+  i {
+    color: $color-primary;
+  }
 }

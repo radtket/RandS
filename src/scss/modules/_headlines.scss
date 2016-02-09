@@ -20,18 +20,34 @@
 
 	&-primary {
 		@extend %hdln-prim;
-		margin-bottom: em(70px, 24px);
+		margin-bottom: em(40px, 24px);
 
 		@include m(grouped) {
 			@extend %hdln-prim;
 			margin-top: em(0px, 24px);
 			margin-bottom: em(20px, 24px);
 		}
+		@include m(psuedo) {
+			@extend %hdln-prim;
+			margin-bottom: em(30px, 24px);
+			position: relative;
+			padding-left: 20px;
+			color: $white;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 5px;
+				background: $color-primary;
+				height: 100%;
+			}
+		}
 	}
 
  	&-secondary {
 		@extend %hdln-sec;
-		margin-bottom: em(22px, 20px);
+		margin-bottom: em(20px, 20px);
 
 		@include m(grouped) {
 			@extend %hdln-sec;
