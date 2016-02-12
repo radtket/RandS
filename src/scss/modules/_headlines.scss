@@ -27,6 +27,11 @@
 			margin-top: em(0px, 24px);
 			margin-bottom: em(20px, 24px);
 		}
+		@include m(roofing) {
+			@extend %hdln-prim;
+			margin: 0;
+			color: #fff;
+		}
 		@include m(psuedo) {
 			@extend %hdln-prim;
 			margin-bottom: em(30px, 24px);
@@ -47,12 +52,22 @@
 
  	&-secondary {
 		@extend %hdln-sec;
-		margin-bottom: em(20px, 20px);
+		margin: em(20px, 20px) 0;
 
 		@include m(grouped) {
 			@extend %hdln-sec;
 	 		margin-bottom: em(5px, 20px);
-		}		
+		}
+
+		@include m(subtitle) {
+
+			color: #b5b7ac;
+			font-weight: $font-weight--thin;
+			font-size: em(18px);
+			font-family: $font-family--secondary;
+			display: block;
+			margin: 0 0 em(10px, 18px) 0;
+		}			
 	}
 
 }

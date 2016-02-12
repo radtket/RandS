@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             '<%= grunt.template.today("yyyy-mm-dd") %> */',
         },
         dev: {
-            src: ['src/js/vendor/jquery-1.11.2.min.js', 'src/js/vendor/bootstrap.js','src/js/plugins.js', 'src/js/main.js'],
+            src: ['src/js/vendor/jquery-1.11.2.min.js', 'src/js/vendor/bootstrap.js', 'src/js/vendor/slick.js', 'src/js/plugins.js', 'src/js/main.js'],
             dest: 'js/script.min.js',
         },
     },

@@ -2,6 +2,29 @@
 // Helpers
 // ==========================================================================
 
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.vertical-container {
+  height: 400px;
+  text-align: center;
+}
+
+.vertical-item {
+  display: inline-block;
+  padding: 40px 57px;
+  background: $pickled-blue;
+  @include vertical-align();
+}
+
+
+
 // Clearfix
 
 %clearfix {
@@ -58,4 +81,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+
+// Background colors
+
+.bg {
+	&__primary {
+		background-color: $color-primary;
+	}
+
+	&__secondary {
+		background-color: #fff;
+	}
+
+	&__light {
+		background-color: #F4F4F4;
+	}
+
+	&__dark {
+		background-color: $shark;
+	}
+
 }
