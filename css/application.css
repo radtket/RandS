@@ -8217,7 +8217,7 @@ button.close {
 .single-item .img-3 {
   background-image: url("../img/slider/3.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   height: 750px;
 }
 
@@ -8784,6 +8784,26 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+.slick-prev,
+.slick-next {
+  height: 40px;
+  width: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 10000;
 }
 
 .alt-features-icon {

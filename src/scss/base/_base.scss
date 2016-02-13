@@ -20,6 +20,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
+.slick-prev,
+.slick-next {
+  height: 40px;
+  width: 40px;
+  &:before {
+    font-size: 40px;
+  }
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 10000;
+}
+
 .alt-features-icon {
     padding-top: 10px;
     font-size: 48px;
