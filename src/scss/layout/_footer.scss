@@ -6,7 +6,7 @@
   font-family: $font-family--primary;
   font-size: 14px;
   font-weight: $font-weight--ultra-bold;
-  padding: 50px 15px;
+  padding: 45px 15px;
 	&.active {
 		color: $color-primary;
 	}
@@ -26,8 +26,22 @@
 
 .main-nav {
 	@extend .navbar-default;
-	background: url('http://static.livedemo00.template-help.com/joomla_51888/templates/theme2070/images/template/headerBg.gif') bottom left repeat-x #ffffff;
-	padding-bottom: 11px;
+  .navbar-toggle {
+  margin: 38px 20px;
+  background-color: $blue-bayoux;
+  border-color: $pickled-blue;
+  box-shadow: 0 0px 3px #a1a1a1;
+  -webkit-box-shadow: 0 0px 3px #a1a1a1;
+  -moz-box-shadow: 0 0px 3px #a1a1a1;
+  -o-box-shadow: 0 0px 3px #a1a1a1;
+  &:hover,
+  &:focus {
+    background-color: $pickled-blue;
+  }
+  .icon-bar {
+    background-color: $grey;
+  }
+}
 }
 
 

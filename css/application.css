@@ -8786,6 +8786,115 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.partners {
+  margin: 0 15px 30px 15px;
+  overflow: hidden;
+}
+
+.partner {
+  padding: 15px;
+  text-align: center;
+  -webkit-box-shadow: -1px -1px 0px 0px #dcddd8;
+  -moz-box-shadow: -1px -1px 0px 0px #dcddd8;
+  box-shadow: -1px -1px 0px 0px #dcddd8;
+}
+
+.partner > .partner-img {
+  display: block;
+  width: 180px;
+  height: 126px;
+  background-image: url("http://s15.postimg.org/4vecomewn/image.jpg");
+  background-size: contain;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+#cf {
+  position: relative;
+  width: 180px;
+  height: 126px;
+  margin: 0 auto;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity: 0;
+}
+
+.top-line {
+  padding: 15px 0;
+  background: #354b5e;
+  border-bottom: 1px solid #f3f3f3;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.top-line ul.info-list {
+  margin: 0;
+  padding: 0;
+}
+
+.top-line ul.info-list li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-line ul.info-list li i {
+  color: #D74B4B;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.top-line ul.social-icons {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.top-line ul.social-icons li {
+  display: inline-block;
+  margin-left: 9px;
+}
+
+.top-line ul.social-icons li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.top-line ul.social-icons li a:hover {
+  color: #D74B4B;
+}
+
+@media (max-width: 991px) {
+  .top-line ul.info-list {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .top-line ul.social-icons {
+    text-align: center;
+  }
+}
+
 .slick-prev,
 .slick-next {
   height: 40px;
@@ -9009,7 +9118,7 @@ hr.black {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 900;
-  padding: 50px 15px;
+  padding: 45px 15px;
 }
 
 .navbar-right li a.active {
@@ -9028,9 +9137,22 @@ hr.black {
   padding-bottom: 90px;
 }
 
-.main-nav {
-  background: url("http://static.livedemo00.template-help.com/joomla_51888/templates/theme2070/images/template/headerBg.gif") bottom left repeat-x #ffffff;
-  padding-bottom: 11px;
+.main-nav .navbar-toggle {
+  margin: 38px 20px;
+  background-color: #475F77;
+  border-color: #354b5e;
+  box-shadow: 0 0px 3px #a1a1a1;
+  -webkit-box-shadow: 0 0px 3px #a1a1a1;
+  -moz-box-shadow: 0 0px 3px #a1a1a1;
+  -o-box-shadow: 0 0px 3px #a1a1a1;
+}
+
+.main-nav .navbar-toggle:hover, .main-nav .navbar-toggle:focus {
+  background-color: #354b5e;
+}
+
+.main-nav .navbar-toggle .icon-bar {
+  background-color: #dcddd8;
 }
 
 .footer {
@@ -9109,6 +9231,12 @@ a.footer__contact--item {
 /* Section Spacing */
 .bg-dark {
   background-color: #252525;
+}
+
+.section-logos {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .sssection {
