@@ -114,4 +114,11 @@ a.footer__contact--item {
   i {
     color: $color-primary;
   }
+  a {
+    color: palette(grey, x-light);
+    &:hover {
+      color: $color-primary;
+      transition: $trns-duration;
+    }
+  }
 }

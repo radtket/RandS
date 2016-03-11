@@ -8495,6 +8495,19 @@ button.close {
   transform: translateY(-50%);
 }
 
+.vc {
+  height: 150px;
+}
+
+.vi {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
@@ -10366,6 +10379,15 @@ a.footer__contact--item {
   color: #D74B4B;
 }
 
+.copyright a {
+  color: white;
+}
+
+.copyright a:hover {
+  color: #D74B4B;
+  transition: 0.3s;
+}
+
 /* Section Spacing */
 .bg-dark {
   background-color: #252525;
@@ -10535,6 +10557,67 @@ a.footer__contact--item {
   font-family: "Hind", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   margin: 0 0 0.5555555556em 0;
+}
+
+.input-contact {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  font-size: 14px;
+  background: none;
+  outline: none;
+  color: #333;
+  min-height: 25px;
+  line-height: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.input-contact::-moz-placeholder,
+.textarea-contact::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.input-contact:-ms-input-placeholder,
+.textarea-contact:-ms-input-placeholder {
+  color: white;
+}
+
+.input-contact::-webkit-input-placeholder,
+.textarea-contact::-webkit-input-placeholder {
+  color: white;
+}
+
+textarea.textarea-contact {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  max-width: 100%;
+  font-size: 14px;
+  background: none;
+  outline: none;
+  color: #333;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.contact-button {
+  border: 1px solid #D74B4B;
+  color: #fff;
+  background: #D74B4B;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background-color: #d23636;
+  border-color: #d23636;
+  transition: 0.3s;
 }
 
 /*

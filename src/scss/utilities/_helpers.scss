@@ -23,7 +23,14 @@
   @include vertical-align();
 }
 
+.vc {
+  height: 150px;
+}
 
+.vi {
+  display: inline-block;
+  @include vertical-align();
+}
 
 // Clearfix
 
