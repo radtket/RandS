@@ -67,16 +67,33 @@ $(document).ready(function($) {
 
 	//Google Map
 	var map;
+
+	var myLatLng = {
+		lat: 36.75599,
+		lng: -121.70992
+	};
+
 	window.initMap = function() {
-	  map = new google.maps.Map(document.getElementById('map-canvas'), {
-	    center: {
-	      lat: -34.397,
-	      lng: 150.644
-	    },
-	    zoom: 8
-	  });
+
+	var mapOptions = {
+		zoom: 8,
+		center: myLatLng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+
+	      map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Hello World!'
+    });
 	}
-	
+
 	
 });
 
