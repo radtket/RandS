@@ -8499,6 +8499,11 @@ button.close {
   height: 150px;
 }
 
+#dvMap {
+  width: 100%;
+  height: 400px;
+}
+
 .vi {
   display: inline-block;
   position: relative;
