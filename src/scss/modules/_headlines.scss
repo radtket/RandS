@@ -35,9 +35,22 @@
 
 		@include m(locations) {
 			@extend %hdln-prim;
+			position: relative;
+			padding-bottom: 20px;
 			color: $color-secondary;
 			text-align: center;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: -50px;
+				width: 100px;
+				background: $color-primary;
+				height: 5px;
+			}
 		}
+
 		@include m(psuedo) {
 			@extend %hdln-prim;
 			margin-bottom: em(30px, 24px);
