@@ -33,6 +33,12 @@
 			color: #fff;
 		}
 
+		@include m(locations--nops) {
+			@extend %hdln-prim;
+			color: $color-secondary;
+			text-align: center;
+		}
+
 		@include m(locations) {
 			@extend %hdln-prim;
 			position: relative;
