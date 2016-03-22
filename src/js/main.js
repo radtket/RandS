@@ -41,8 +41,14 @@ $(document).ready(function($) {
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
 		return false;
 	});
+
+
+
+    
 	
-	//smoothScroll
+	$('a#sourceDownload').attr({ target : '_blank', 
+                                   href   : 'Employment__Application.docx'
+                              });
 
 	
 
@@ -127,15 +133,20 @@ $(document).ready(function($) {
    "lng": '-114.058487',
    "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
  }, {
-   "title": 'Reno, NV',
-   "lat": '39.549819',
-   "lng": '-119.80962',
-   "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
+   "title": 'Elko, NV',
+   "lat": '40.828863',
+   "lng": '-115.764492',
+   "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
  }, {
    "title": 'Las Vegas, NV',
    "lat": '36.0936145',
    "lng": '-115.1877006',
    "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
+ }, {
+   "title": 'Reno, NV',
+   "lat": '39.549819',
+   "lng": '-119.80962',
+   "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
  }, {
    "title": 'Medford, OR',
    "lat": '42.3845589',
@@ -157,6 +168,16 @@ $(document).ready(function($) {
    "lng": '-98.537604',
    "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
  }, {
+   "title": 'Flagstaff, AZ',
+   "lat": '35.213822',
+   "lng": '-111.596297',
+   "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+  }, {
+   "title": 'Kingman, AZ',
+   "lat": '35.223864',
+   "lng": '-114.006529',
+   "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+   }, {
    "title": 'Lake Havasu City, AZ',
    "lat": '34.5030289',
    "lng": '-114.3494259',

@@ -2,10 +2,12 @@ $(document).ready(function() {
     $('.single-item').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 3000,
         fade: true,
         cssEase: 'linear',
-        arrows: true
+        arrows: false,
+        autoplay: true,
+  		autoplaySpeed: 3000
     });
 });
 
