@@ -10806,3 +10806,15 @@ textarea.textarea-contact {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-right li a {
+    color: #777777;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px 15px;
+    text-align: right;
+  }
+}
