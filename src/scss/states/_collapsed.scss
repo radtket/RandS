@@ -1,3 +1,40 @@
 // ==========================================================================
 // Collapsed
 // ==========================================================================
+
+
+@media (max-width: 991px) {
+	
+	.top-line ul.info-list {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.top-line ul.social-icons {
+		text-align: center;
+	}
+
+	.footer .col-md-4 {
+		text-align: center;
+	}
+
+	.headline-primary--psuedo {
+		padding-left: 0px;
+		padding-bottom: 10px;
+		margin: 20px auto;
+	}
+
+	.headline-primary--psuedo:after {
+		content: '';
+		position: absolute;
+		width: 150px;
+		height: 5px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -77px;
+	}
+
+	.copyright p {
+		text-align: center;
+	}
+
+}
