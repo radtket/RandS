@@ -5,73 +5,77 @@
 // Nav Items
 
 %nav-item-horz {
-  @include mq(medium) {
-    display: inline-block;
-    margin: 0 em(12px);
-  }
+	@include mq(medium) {
+		display: inline-block;
+		margin: 0 em(12px);
+	}
 }
 
 %nav-item-link {
-  font-weight: $font-weight--light;
-  text-align: center;
-  font-size: em(18px);
-  display: block;
-  padding: em(8px, 18px);
-  border-bottom: 1px solid transparent;
-  @include mq(small) {
-    border-bottom-color: palette(grey, xx-light);
-    padding-top: em(14px, 18px);
-    padding-bottom: em(14px, 18px);
-  }
+	border-bottom: 1px solid transparent;
+	display: block;
+	font-size: em(18px);
+	font-weight: $font-weight--light;
+	padding: em(8px, 18px);
+	text-align: center;
+
+	@include mq(small) {
+		border-bottom-color: palette(grey, xx-light);
+		padding-bottom: em(14px, 18px);
+		padding-top: em(14px, 18px);
+	}
 }
 
 %nav-item-on {
-  color: palette(black);
-  border-color: $color-primary;
+	color: palette(black);
+	border-color: $color-primary;
 }
 
 // Headlines
 
 %hdln-prim {
-  font-weight: $font-weight--medium;
-  font-size: em(24px);
-  color: #21282E;
-  display: block;
-  text-transform: uppercase;
+	color: #21282E;
+	display: block;
+	font-size: em(24px);
+	font-weight: $font-weight--medium;
+	text-transform: uppercase;
 }
+
 %hdln-sec {
-  color: #777777;
-  font-weight: $font-weight--thin;
-  font-size: em(20px);
-  font-family: $font-family--primary;
-  display: block;
-  text-transform: uppercase;
+	color: #777777;
+	display: block;
+	font-family: $font-family--primary;
+	font-size: em(20px);
+	font-weight: $font-weight--thin;
+	text-transform: uppercase;
 }
 
 
 // Buttons
 
 %btn {
-  padding: 15px 30px;
-  border: 0;
-  border-radius : $br--default;
-  color: $white;
-  text-transform: uppercase;
-  font-size : em(14px);
-  font-weight: $font-weight--medium;
-  transition: opacity $trns-duration;
-  display: block;
-  &:hover {
-    opacity: .75;
-  }
-  &:active {
-    opacity: initial;
-  }
+	border: 0;
+	border-radius: $br--default;
+	color: $white;
+	display: block;
+	font-size: em(14px);
+	font-weight: $font-weight--medium;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	transition: opacity $trns-duration;
+
+	&:hover {
+		opacity: .75;
+	}
+
+	&:active {
+		opacity: initial;
+	}
 }
 
 // Icons
 
 %icn--ui {
-  line-height: 0;
-  cursor: pointer;
+	cursor: pointer;
+	line-height: 0;
 }

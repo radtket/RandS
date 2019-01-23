@@ -2,13 +2,12 @@
 // Collapsed
 // ==========================================================================
 
-
 @media (max-width: 991px) {
-
 	.top-line ul.info-list {
-		text-align: center;
 		margin-bottom: 5px;
+		text-align: center;
 	}
+
 	.top-line ul.social-icons {
 		text-align: center;
 	}
@@ -18,36 +17,34 @@
 	}
 
 	.headline-primary--psuedo {
-		padding-left: 0px;
-		padding-bottom: 10px;
 		margin: 20px auto;
+		padding-bottom: 10px;
+		padding-left: 0;
 	}
 
-	.headline-primary--psuedo:after {
-		content: '';
-		position: absolute;
-		width: 150px;
-		height: 5px;
+	.headline-primary--psuedo::after {
 		bottom: 0;
+		content: "";
+		height: 5px;
 		left: 50%;
 		margin-left: -77px;
+		position: absolute;
+		width: 150px;
 	}
 
 	.copyright p {
 		text-align: center;
 	}
-
 }
-
 
 @media (max-width: 768px) {
 	.navbar-right li a {
-	    color: #777777;
-	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
-	    font-size: 14px;
-	    font-weight: 900;
-	    padding: 10px 15px;
-	    text-align: right;
+		color: #777777;
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		font-weight: 900;
+		padding: 10px 15px;
+		text-align: right;
+		text-transform: uppercase;
 	}
 }

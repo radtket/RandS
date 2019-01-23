@@ -2,89 +2,58 @@
 // Nav
 // ==========================================================================
 
-/*
-.nav {
-	margin-top: em(20px);
-	margin-bottom: em(30px);
-  
-  @include e(item) {
-    @extend %nav-item-horz;
-    a {
-      @extend %nav-item-link;
-      color: palette(grey);
-      &:hover {
-        @extend %nav-item-on;
-      }
-    }
-    
-    @include m(current) {
-      @extend %nav-item-horz;
-      a {
-        @extend %nav-item-link;
-        @extend %nav-item-on;
-      }    
-    }
-    
-  }
-}
-*/
-
-
-
-
-
 .page__banner {
-  padding: 50px 0;
-  background: $pickled-blue;
-  overflow: hidden;
-  h1 {
-    @extend %hdln-prim;
-    @extend .pull-left;
-    color: $white;
-    margin: 0 0 em(30px, 24px);;
-    font-size: em(24px);
-    margin-bottom: 0px;
-  }
-  ul.page-depth {
-    @extend .pull-right;
-    @extend .text-right;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    li {
-      display: inline-block;
-      margin-left: 10px;
-      &.active a {
-        color: $white;
-      }
-      &:before {
-        content: '/';
-        font-size: em(12px);
-        font-weight: 400;
-        line-height: 22px;
-        margin: 0 0 10px;
-        color: $white;
-        margin-bottom: 0;
-        margin-right: 10px;
-      }
-      &:first-child:before {
-        display: none;
-        margin-right: 0;
-      }
-      a {
-        display: inline-block;
-        transition: all $trns-duration  ease-in-out;
-        -moz-transition: all $trns-duration  ease-in-out;
-        -webkit-transition: all $trns-duration  ease-in-out;
-        -o-transition: all $trns-duration ease-in-out;
-        font-size: em(12px);
-        line-height: 22px;
-        margin-bottom: 0;
-        &:hover {
-          color: $color-primary;
-        }
-      }
-    }
-  }
-}
+	background: $pickled-blue;
+	overflow: hidden;
+	padding: 50px 0;
 
+	h1 {
+		@extend %hdln-prim;
+		@extend .pull-left;
+		color: $white;
+		font-size: em(24px);
+		margin: 0 0 em(30px, 24px);
+	}
+
+	ul.page-depth {
+		@extend .pull-right;
+		@extend .text-right;
+		margin: 10px 0 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin-left: 10px;
+
+			&.active a {
+				color: $white;
+			}
+
+			&::before {
+				content: "/";
+				font-size: em(12px);
+				font-weight: 400;
+				line-height: 22px;
+				margin: 0 10px 0 0;
+				color: $white;
+			}
+
+			&:first-child::before {
+				display: none;
+				margin-right: 0;
+			}
+
+			a {
+				display: inline-block;
+				font-size: em(12px);
+				line-height: 22px;
+				margin-bottom: 0;
+				transition: all $trns-duration ease-in-out;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}

@@ -4,73 +4,73 @@
 /* Section Spacing */
 
 .bg-dark {
-    background-color: #252525;
+	background-color: #252525;
 }
 
 .section {
-  background: palette(grey, light);
-  padding: 50px 0;
+	background: palette(grey, light);
+	padding: 50px 0;
 }
 
 .section__banner {
-  background: $color-primary;
-  color: $black;
-  h5 {
-    padding: 60px 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #fefefe;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 35px;
-  }
-  ul {
-    float: right;
-    margin: 60px 0;
-    background: rgba(33,194,248,0);
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-  }
+	background: $color-primary;
+	color: $black;
+
+	h5 {
+		color: #fefefe;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		letter-spacing: 2px;
+		line-height: 35px;
+		margin: 0;
+		padding: 60px 0;
+		text-transform: uppercase;
+	}
+
+	ul {
+		background: rgba(33, 194, 248, 0);
+		float: right;
+		margin: 60px 0;
+		transition: all ease 0.5s;
+	}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-  .section__banner h5 {
-      font-size: 20px;
-      padding: 30px 0;
-  }
-  .section__banner ul {
-        float: none !important;
-  }
-  .section__banner ul {
-        margin-top: 0;
-      margin-bottom: 30px;
-      padding: 10px 15px;
-      line-height: 18px;
-  }
+	.section__banner h5 {
+		font-size: 20px;
+		padding: 30px 0;
+	}
+
+	.section__banner ul {
+		float: none !important;
+	}
+
+	.section__banner ul {
+		line-height: 18px;
+		margin-bottom: 30px;
+		margin-top: 0;
+		padding: 10px 15px;
+	}
 }
 
 
 
 .panel {
-  @extend %panel-default;
-  
-  @include m(centered) {
-    @extend %panel-default;
-    @extend %center-align;    
-  }
-  
-  @include m(padded) {
-    @extend %panel-padding;
-    
-    @include m(centered) {
-      @extend %center-align;
-	    @extend %panel-padding;
-    }
-  }
+	@extend %panel-default;
+
+	@include m(centered) {
+		@extend %panel-default;
+		@extend %center-align;
+	}
+
+	@include m(padded) {
+		@extend %panel-padding;
+
+		@include m(centered) {
+			@extend %center-align;
+			@extend %panel-padding;
+		}
+	}
 }
 
 
@@ -90,11 +90,12 @@
 // Roofing About Section
 
 .roofing__about--avatar {
-    position: relative;
-    img {
-      max-height: 200px;
-      margin: 0 auto;
-    }
+	position: relative;
+
+	img {
+		max-height: 200px;
+		margin: 0 auto;
+	}
 }
 
 
@@ -102,31 +103,36 @@
 // Product Logo Section
 
 .section-logos {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 
 .product {
-  margin: 0 15px 30px 15px;
-  overflow: hidden;
+	margin: 0 15px 30px 15px;
+	overflow: hidden;
 
-  .product__logo {
-    padding: 15px;
-    text-align: center;
-    -webkit-box-shadow: -1px -1px 0px 0px #dcddd8;
-    -moz-box-shadow: -1px -1px 0px 0px #dcddd8;
-    box-shadow: -1px -1px 0px 0px #dcddd8;
-  }
-  
-  > .partner-img {
-    display: block;
-    width: 180px;
-    height: 126px;
-    background-image: url("http://s15.postimg.org/4vecomewn/image.jpg");
-    background-size: contain;
-    background-position: center center;
-    margin: 0 auto;
-  }
+	.product__logo {
+		padding: 15px;
+		text-align: center;
+		box-shadow: -1px -1px 0px 0px #dcddd8;
+		display: flex;
+		justify-content: center;
+
+		>img {
+			height: 40px;
+			max-width: 75%;
+		}
+	}
+
+	>.partner-img {
+		display: block;
+		width: 180px;
+		height: 126px;
+		background-image: url("http://s15.postimg.org/4vecomewn/image.jpg");
+		background-size: contain;
+		background-position: center center;
+		margin: 0 auto;
+	}
 }

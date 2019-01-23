@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .state {
-padding: 10px 0;
+	padding: 10px 0;
 }
 
 .state__avatar {
@@ -11,21 +11,22 @@ padding: 10px 0;
 	max-height: 300px;
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.map-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.map-responsive iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .store {
-    padding-top: 30px;
-    padding-bottom: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }

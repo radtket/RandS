@@ -3,34 +3,35 @@
 // ==========================================================================
 
 #headline {
-	position: relative;
 	padding-left: 25px;
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 10px;
+	position: relative;
+
+	&::after {
 		background: $color-primary;
+		bottom: 0;
+		content: "";
 		height: 100%;
+		left: 0;
+		position: absolute;
+		width: 10px;
 	}
 }
 
 .headline {
-
 	&-primary {
 		@extend %hdln-prim;
 		margin-bottom: em(40px, 24px);
 
 		@include m(grouped) {
 			@extend %hdln-prim;
-			margin-top: em(0px, 24px);
 			margin-bottom: em(20px, 24px);
+			margin-top: em(0px, 24px);
 		}
+
 		@include m(roofing) {
 			@extend %hdln-prim;
-			margin: 0;
 			color: #fff;
+			margin: 0;
 		}
 
 		@include m(locations--nops) {
@@ -41,58 +42,58 @@
 
 		@include m(locations) {
 			@extend %hdln-prim;
-			position: relative;
-			padding-bottom: 20px;
 			color: $color-secondary;
+			padding-bottom: 20px;
+			position: relative;
 			text-align: center;
-			&:after {
-				content: '';
-				position: absolute;
+
+			&::after {
+				background: $color-primary;
 				bottom: 0;
+				content: "";
+				height: 5px;
 				left: 50%;
 				margin-left: -50px;
+				position: absolute;
 				width: 100px;
-				background: $color-primary;
-				height: 5px;
 			}
 		}
 
 		@include m(psuedo) {
 			@extend %hdln-prim;
-			margin-bottom: em(30px, 24px);
-			position: relative;
-			padding-left: 20px;
 			color: $white;
-			&:after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 5px;
+			margin-bottom: em(30px, 24px);
+			padding-left: 20px;
+			position: relative;
+
+			&::after {
 				background: $color-primary;
+				bottom: 0;
+				content: "";
 				height: 100%;
+				left: 0;
+				position: absolute;
+				width: 5px;
 			}
 		}
 	}
 
- 	&-secondary {
+	&-secondary {
 		@extend %hdln-sec;
 		margin: em(20px, 20px) 0;
 
 		@include m(grouped) {
 			@extend %hdln-sec;
-	 		margin-bottom: em(5px, 20px);
+			margin-bottom: em(5px, 20px);
 		}
 
 		@include m(subtitle) {
-
 			color: #b5b7ac;
 			font-weight: $font-weight--thin;
 			font-size: em(18px);
 			font-family: $font-family--secondary;
 			display: block;
 			margin: 0 0 em(10px, 18px) 0;
-		}			
+		}
 	}
-
 }
