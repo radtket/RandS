@@ -1,6 +1,6 @@
 # R&S Supply - 2016
 
-A clinet website for R&S Supply
+A client website for R&S Supply
 
 **Live demo:** [https://radtket.github.io/rs-supply-2016/](https://radtket.github.io/rs-supply-2016/)
 
