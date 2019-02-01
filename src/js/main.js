@@ -1,15 +1,17 @@
 $(document).ready($ => {
 	// Main SLider
-	$(".single-item").slick({
-		dots: true,
-		infinite: true,
-		speed: 3000,
-		fade: true,
-		cssEase: "linear",
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 3000
-	});
+	$(".single-item")
+		.not(".slick-initialized")
+		.slick({
+			dots: true,
+			infinite: true,
+			speed: 3000,
+			fade: true,
+			cssEase: "linear",
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 3000
+		});
 
 	$(".navbar-collapse ul li a").on("click", function() {
 		$("html, body").animate({ scrollTop: $(this.hash).offset().top - 5 }, 1000);

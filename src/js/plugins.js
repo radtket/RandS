@@ -1,5 +1,5 @@
 $(document).ready(() => {
-	$(".single-item").slick({
+	$(".single-item").not('.slick-initialized').slick({
 		dots: true,
 		infinite: true,
 		speed: 3000,
